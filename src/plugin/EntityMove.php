@@ -312,8 +312,8 @@ class MonsterEntity extends Monster{
         }
     }
 
-    public function onUpdate(){
-        if($this->closed !== false){
+    public function onUpdate($currentTick){
+        if($this->closed){
             return false;
         }
 
@@ -598,8 +598,8 @@ abstract class AnimalEntity extends Animal{
         }
     }
 
-    public function onUpdate(){
-        if($this->closed === true){
+    public function onUpdate($currentTick){
+        if($this->closed){
             return false;
         }
 
