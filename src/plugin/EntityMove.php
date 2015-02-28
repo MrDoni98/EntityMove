@@ -209,16 +209,16 @@ class EntityMove extends PluginBase implements Listener{
     public function onCommand(CommandSender $i, Command $cmd, $label, array $sub){
         $output = "[EntityMove]";
         switch($cmd->getName()){
-            case "제거":
+            case "rementy":
                 foreach(self::getEntities() as $ent){
                     if($ent instanceof Entity) $ent->kill();
                 }
-                $output .= "소환된 엔티티를 모두 제거했어요";
+                $output .= "удалено";
                 break;
-            case "체크":
+            case "checkenty":
                 $output .= "현재 소환된 수:" . count(self::getEntities()) . "마리";
                 break;
-            case "스폰":
+            case "spawenty":
                 if(!$i instanceof Player) return true;
                 $output .= "몬스터가 소환되었어요";
                 self::addEntity($sub[0], $i);
