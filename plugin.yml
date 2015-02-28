@@ -7,15 +7,15 @@ api: 1.4.1
 load: POSTWORLD
 author: 우유맛비누
 commands:
- 제거:
+ rementy:
   usage: false
   permission: entitymove.command.removeentity
   description: 모든 엔티티를 제거합니다
- 스폰:
+ spawenty:
   usage: false
   permission: entitymove.command.spawnentity
   description: 원하는 위치에 엔티티를 스폰해줍니다
- 체크:
+ checkenty:
   usage: false
   permission: entitymove.command.checkentity
   description: 현재 소환된 몬스터 수를 알려줍니다
